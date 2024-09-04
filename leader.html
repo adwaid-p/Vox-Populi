@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="leader.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html#page1">Home page</a>
+        <a href="index.html#page2">About us</a>
+        <a href="index.html#page3">Contact</a>
+        <a href="login.html">Login</a>
+    </nav>
+    <div class="page6" id="page6">
+        <div class="part1">
+            <div class="line">
+                <h1>Reviews</h1>
+                <div class="sort">
+                    <button onclick="toggleDropdown()" class="dropbtn">Filter <img src="filter.png" alt=""></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <!-- <a href="#"></a> -->
+                        <button>Severity</button>
+                        <hr>
+                        <!-- <a href="#">Frequency</a> -->
+                        <button>Frequency</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit excepturi laborum quia suscipit culpa
+                    ipsam veniam velit voluptatibus quo officiis, iste dicta temporibus odio molestiae voluptates alias
+                    adipisci saepe modi?
+                    Suscipit reprehenderit, eaque unde minus laboriosam pariatur amet</p>
+            </div>
+            <div class="card">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit excepturi laborum quia suscipit culpa
+                    ipsam veniam velit voluptatibus quo officiis, iste dicta temporibus odio molestiae voluptates alias
+                    adipisci saepe modi?
+                    Suscipit reprehenderit, eaque unde minus laboriosam pariatur amet</p>
+            </div>
+            <div class="card">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit excepturi laborum quia suscipit culpa
+                    ipsam veniam velit voluptatibus quo officiis, iste dicta temporibus odio molestiae voluptates alias
+                    adipisci saepe modi?
+                    Suscipit reprehenderit, eaque unde minus laboriosam pariatur amet</p>
+            </div>
+        </div>
+        <div class="part2">
+            <img src="sample4.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        let myDropdown = document.getElementById('myDropdown')
+        function toggleDropdown() {
+            myDropdown.classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>

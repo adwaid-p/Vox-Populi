@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-clr: #333333;
+    --button-clr: #ffffff;
+    --primary-clr: #ffffff;
+    --scndry-clr: #f2f2f2;
+    --btn-bg-clr: #eea216;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+button {
+    background-color: var(--btn-bg-clr);
+    color: var(--button-clr);
+    font-size: 15.9px;
+    letter-spacing: 0.5px;
+    width: 206px;
+    height: 45px;
+    border: none;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    transition: 0.1s background-color ease, 0.3s scale ease;
+}
+
+button:hover {
+    background-color: rgb(223, 152, 19);
+}
+
+button:active,.social img {
+    scale: 1.02;
+}
+nav {
+    width: 100vw;
+    height: 80px;
+    padding: 0 60px;
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+
+nav a {
+    color: var(--main-clr);
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+nav a:hover{
+    color: #979191;
+}
+
+#page5{
+    width: 100%;
+    height: 100vh;
+    
+}

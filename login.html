@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html#page1">Home page</a>
+        <a href="index.html#page2">About us</a>
+        <a href="index.html#page3">Contact</a>
+        <a href="login.html">Login</a>
+    </nav>
+    <div class="page4">
+        <div class="part1" id="page1">
+            <form action="#" onsubmit="return false;">
+                <img id="profile" src="b_profile.png" alt="">
+                <label for="">Name of organisation</label>
+                <input type="text">
+                <div class="line">
+                    <button type="button" onclick="setRedirectUrl('employee.html')">Employee</button>
+                    <button type="button" onclick="setRedirectUrl('leader.html')">Leader</button>
+                </div>
+                <button type="button" id="login" onclick="handleLogin()">Login</button>
+            </form>
+        </div>
+        <div class="part2">
+            <div class="image">
+                <img src="sample3.jpg" alt="">
+            </div>
+            <div class="cr"></div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

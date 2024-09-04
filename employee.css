@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-clr: #333333;
+    --button-clr: #ffffff;
+    --primary-clr: #ffffff;
+    --scndry-clr: #f2f2f2;
+    --btn-bg-clr: #eea216;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+button {
+    background-color: var(--btn-bg-clr);
+    color: var(--button-clr);
+    font-size: 15.9px;
+    letter-spacing: 0.5px;
+    width: 206px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.1s background-color ease, 0.3s scale ease;
+}
+
+button:hover {
+    background-color: rgb(223, 152, 19);
+}
+
+button:active,.social img {
+    scale: 1.02;
+}
+
+.line{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+nav {
+    width: 100vw;
+    height: 80px;
+    padding: 0 60px;
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+
+nav a {
+    color: var(--main-clr);
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+nav a:hover{
+    color: #979191;
+}
+
+.page5 {
+    height: 130vh;
+    width: 110%;
+    background-color: var(--scndry-clr);
+    padding: 160px;
+    display: flex;
+    gap: 90px;
+}
+
+.page5 .part1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.r1,.r2{
+    height: 50%;
+    display: grid;
+    gap: 23px;
+}
+
+.page5 .part1 form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    top: -70px;
+}
+
+.page5 .part1 form textarea{
+    padding: 10px;
+    font-size: 17px;
+    line-height: 24px;
+    font-family: "Work Sans", sans-serif;
+    color: var(--main-clr);
+    font-weight: normal;
+    outline: #007bff 1px;
+    resize: none;
+    width: 100%;
+    height: 130px;
+    border: 1.6px solid;
+    border-radius: 10px;
+}
+/* input{
+    padding: 10px;
+    font-size: 17px;
+    line-height: 24px;
+    font-family: "Work Sans", sans-serif;
+    color: var(--main-clr);
+    font-weight: normal;
+    outline: #007bff 1px;
+} */
+
+.page5 .part1 h1 {
+    font-size: 44px;
+    line-height: 52px;
+    font-family: "Outfit", sans-serif;
+    color: var(--main-clr);
+    font-weight: bold;
+}
+
+.page5 .part1 label {
+    color: var(--main-clr);
+        font-size: 26px;
+    font-family: "Outfit", sans-serif;
+    color: var(--main-clr);
+    font-weight: bold;
+}
+
+
+.page5 .part2 {
+    width: 50%;
+    height: 100%;
+}
+
+.page5 .part2 .image {
+    width: 550px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.page5 .part2 .image img {
+     width: 100%;
+     height: 120%;
+     object-fit: cover;
+     object-position: center;
+}
+/* #login{
+    margin: 0 auto
+} */
